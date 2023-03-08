@@ -1,10 +1,9 @@
-p {
-    color: red;
+ody {
+  background-color: lightgray;
 }
 
-/* Additional CSS rules */
-body {
-  background-color: lightgray;
+p {
+  color: red;
 }
 
 h1 {
@@ -16,6 +15,21 @@ h1 {
 }
 
 #smiley {
-  width: 300px;
+  width: 400px;
   height: auto;
+}
+
+/* Media query to shrink smiley face to 300px when viewport is equal to or smaller than 400px */
+@media only screen and (max-width: 400px) {
+#smiley {
+  width: 300px;
+}
+}
+
+/* Media query to set smiley face's width to percentage when viewport is equal to or smaller than 300px */
+@media only screen and (max-width: 300px) {
+#smiley {
+  max-width: 300px;
+  width: 100%;
+}
 }
